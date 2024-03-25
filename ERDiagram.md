@@ -3,18 +3,24 @@ users
         password
         displaySetting
         levels
-            testeeExp: int
+            examineeExp: int
             menterExp: int
+
 chatRooms
     chatRoomId
-        postId
-            poster: str
-            kind: str(text / report / response / suggest)
-            comment: str(
-                "you did it" / 
-                "did: achievement: int %, what: str" / 
-                "suggestTarget: int, what: str"
-            )
+        messageIds: arr
 
+chatMessages
+    messageId
+        messager: userId
+        kind: str(text / 
+            report / 
+            response / 
+            suggest)
+        content: str(
+            "you did it" / 
+            "did: achievement: int %, what: str" / 
+            "suggestTarget: int, what: str"
+        )
+        timestamp: int
 
-         
