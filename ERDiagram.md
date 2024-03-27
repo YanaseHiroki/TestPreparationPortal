@@ -5,6 +5,8 @@ users
         levels
             examineeExp: int
             menterExp: int
+        insertTime: int
+        updateTime: int
 
 chatRooms
     chatRoomId
@@ -13,14 +15,25 @@ chatRooms
 chatMessages
     messageId
         messager: userId
-        kind: str(text / 
-            report / 
-            response / 
-            suggest)
+        kind: str("text" / 
+            "report" / 
+            "response" / 
+            "suggest")
         content: str(
             "you did it" / 
-            "did: achievement: int %, what: str" / 
+            "achievement: int (%), what: str" / 
             "suggestTarget: int, what: str"
         )
-        timestamp: int
+        insertTime: int
+        updateTime: int
+
+recomendLinks
+    recomendLinkId
+        title: str
+        url: str
+        recomenndation: str
+        favCount: int
+        insertTime: int
+        updateTime: int
+
 
