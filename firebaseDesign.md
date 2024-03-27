@@ -15,7 +15,7 @@ chatRooms
 
 chatMessages
     messageId
-        messager: userId
+        messenger: userId
         kind: str("text" / 
             "report" / 
             "response" / 
