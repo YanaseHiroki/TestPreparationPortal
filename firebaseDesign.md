@@ -5,6 +5,7 @@ users
         levels
             examineeExp: int
             menterExp: int
+        roomIds: arr
         insertTime: int
         updateTime: int
 
